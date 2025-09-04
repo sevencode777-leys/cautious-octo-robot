@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إمبراطورية إيلون ماسك المالية | $440B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0b0f14">
+    <meta name="description" content="استراتيجية إنفاق ثروة إيلون ماسك البالغة 440 مليار دولار - لعبة تفاعلية متطورة">
+</head>
+<body>
+    <!-- Enhanced Header with wealth display -->
+    <header id="hud">
+        <div class="wealth-display">
+            <div class="wealth-main">
+                <span id="wealth">$440.0B</span>
+                <div class="wealth-subtitle">إمبراطورية ماسك المالية</div>
+                <div class="wealth-rate">
+                    <span id="income-rate">+$0/s</span>
+                    <span id="expense-rate">-$0/s</span>
+                </div>
+            </div>
+        </div>
+        <div class="indicators">
+            <div class="indicator" title="السمعة العالمية">
+                <span class="icon">👑</span>
+                <span id="reputation">50</span>
+                <span class="label">سمعة</span>
+            </div>
+            <div class="indicator" title="مستوى الابتكار">
+                <span class="icon">🚀</span>
+                <span id="innovation">50</span>
+                <span class="label">ابتكار</span>
+            </div>
+            <div class="indicator" title="السعادة العامة">
+                <span class="icon">😊</span>
+                <span id="happiness">50</span>
+                <span class="label">سعادة</span>
+            </div>
+            <div class="indicator" title="البصمة الكربونية">
+                <span class="icon">🌱</span>
+                <span id="carbon">0</span>
+                <span class="label">كربون</span>
+            </div>
+            <div class="indicator" title="النفوذ العالمي">
+                <span class="icon">⭐</span>
+                <span id="influence">0</span>
+                <span class="label">نفوذ</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Enhanced Navigation with new categories -->
+    <nav id="tabs">
+        <button class="tab-button active" data-tab="luxury">
+            <span class="tab-icon">💎</span>
+            <span>رفاهية</span>
+        </button>
+        <button class="tab-button" data-tab="tech">
+            <span class="tab-icon">🤖</span>
+            <span>تكنولوجيا</span>
+        </button>
+        <button class="tab-button" data-tab="space">
+            <span class="tab-icon">🚀</span>
+            <span>فضاء</span>
+        </button>
+        <button class="tab-button" data-tab="projects">
+            <span class="tab-icon">🏗️</span>
+            <span>مشاريع</span>
+        </button>
+        <button class="tab-button" data-tab="charity">
+            <span class="tab-icon">❤️</span>
+            <span>خير</span>
+        </button>
+    </nav>
+
+    <!-- Enhanced Main content panel -->
+    <main id="panel">
+        <div class="panel-content" id="luxury-panel">
+            <div class="category-header">
+                <h2>💎 رفاهية إيلون الشخصية</h2>
+                <p class="category-desc">استمتع بأفخم الكماليات التي يمكن للمال شراؤها</p>
+            </div>
+            <div class="items-grid" id="luxury-items"></div>
+        </div>
+        
+        <div class="panel-content" id="tech-panel" style="display: none;">
+            <div class="category-header">
+                <h2>🤖 إمبراطورية التكنولوجيا</h2>
+                <p class="category-desc">استثمر في أحدث التقنيات التي ستغير العالم</p>
+            </div>
+            <div class="items-grid" id="tech-items"></div>
+        </div>
+        
+        <div class="panel-content" id="space-panel" style="display: none;">
+            <div class="category-header">
+                <h2>🚀 غزو الفضاء</h2>
+                <p class="category-desc">ادفع حدود البشرية نحو النجوم والكواكب البعيدة</p>
+            </div>
+            <div class="items-grid" id="space-items"></div>
+        </div>
+        
+        <div class="panel-content" id="projects-panel" style="display: none;">
+            <div class="category-header">
+                <h2>🏗️ المشاريع العملاقة</h2>
+                <p class="category-desc">مشاريع ضخمة تتطلب وقتاً لكنها تولد عوائد هائلة</p>
+            </div>
+            <div class="projects-list" id="project-items"></div>
+        </div>
+        
+        <div class="panel-content" id="charity-panel" style="display: none;">
+            <div class="category-header">
+                <h2>❤️ تغيير العالم للأفضل</h2>
+                <p class="category-desc">استخدم ثروتك لحل أكبر مشاكل البشرية</p>
+            </div>
+            <div class="items-grid" id="charity-items"></div>
+        </div>
+    </main>
+
+    <!-- Enhanced Events modal -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="event-title"></h3>
+            </div>
+            <div class="modal-body">
+                <p id="event-description"></p>
+                <div id="event-choices"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Toast notifications -->
+    <div id="toast-container"></div>
+
+    <!-- Canvas for advanced effects -->
+    <canvas id="fx-canvas"></canvas>
+
+    <!-- Loading screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">🚀</div>
+            <h1>إمبراطورية إيلون ماسك</h1>
+            <p>جاري تحميل $440 مليار...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
