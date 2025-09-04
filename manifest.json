@@ -1,0 +1,26 @@
+
+{
+  "name": "إمبراطورية إيلون ماسك المالية",
+  "short_name": "ماسك $440B",
+  "description": "لعبة استراتيجية متطورة لإنفاق ثروة إيلون ماسك البالغة 440 مليار دولار",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e13",
+  "theme_color": "#00d4ff",
+  "orientation": "portrait-primary",
+  "categories": ["games", "strategy", "simulation"],
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%2300d4ff'/%3E%3Ctext x='50' y='65' text-anchor='middle' font-size='40' fill='%23000'%3E🚀%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%2300d4ff'/%3E%3Ctext x='50' y='65' text-anchor='middle' font-size='40' fill='%23000'%3E🚀%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
